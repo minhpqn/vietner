@@ -21,7 +21,7 @@ can be found in the following papers.
 - Perl (version 5)
 - yaml
 - pandas
-- crfsuite
+- [crfsuite 0.12](http://www.chokkan.org/software/crfsuite/)
 
 ## Resources
 

@@ -4,7 +4,7 @@ In order to run experiments on VLSP 2016 data, you just need to run
 the shell script `run.sh`
 
 You may need to change the paths to training, test data, output directories
-in the shell scripts and configuration files in the directory [./vlsp2016_exp/config](./vlsp2016_exp/config)
+in the shell scripts and configuration files in the directory [./config](./config)
 
 
 ## VLSP 2016 NER data

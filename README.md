@@ -1,0 +1,98 @@
+# vietner: A Feature-based Vietnamese Named-Entity Recognition Model
+
+Author: Pham Quang Nhat Minh
+
+**vietner** is a feature-based named-entity recognition
+model that obtained very strong results on VLSP 2016
+and VLSP 2018 NER data sets. In VLSP 2018 evaluation
+campaign, **vietner** obtained the first rank among
+participant systems.
+
+Details of the model and features used in the model
+can be found in the following papers.
+
+1. Pham Quang Nhat Minh (2018). [A Feature-Rich Vietnamese Named-Entity Recognition Model](https://arxiv.org/abs/1803.04375). arXiv preprint arXiv:1803.04375.
+2. Pham Quang Nhat Minh (2018). [A Feature-Based Model for Nested Named-Entity Recognition at VLSP-2018 NER Evaluation Campaign](https://arxiv.org/abs/1803.08463). arXiv preprint arXiv:1803.08463.
+
+## Requirements
+
+- Python 3.6.3
+- regex
+- Perl (version 5)
+- yaml
+- pandas
+- crfsuite
+
+## Resources
+
+In experiments on VLSP 2016 and VLSP 2018 NER data, we used following resources.
+
+- glove vectors
+- word2vec vectors
+- Brown word clusters with 1000 clusters.
+- Brown word clusters with 5120 clusters
+
+Details of above resources can be found in the paper \[1\].
+
+You can download above resources on this [link](https://drive.google.com/file/d/1q2mBfnHS29-Kkl1cOS68aJeLq-zD6v4X/view?usp=sharing). After downloading the
+resource file `resources.zip`, uncompress the file into the root directory of
+`vietner` directory.
+
+## Experimental results on VLSP 2016 data set
+
+Go to the directory [./vlsp2016_exp](./vlsp2016_exp) and perform the shell script `run.sh`.
+
+For the details see the [README.md](./vlsp2016_exp/README.md) file the the directory vlsp2016_exp.
+
+You may need to change the paths to training, test data, output directories
+in the shell scripts and configuration files in the directory [./vlsp2016_exp/config](./vlsp2016_exp/config)
+
+Following table shows the experimental results with three settings:
+
+- Using *Original POS and chunking tags* provided in the data. In this setting,
+we use all features derived from words, POS tags, chunking tags
+- *Without chunking tags*: we use features derived from words and POS tags
+- *Without POS, chunking tags*: we use only features derived from words
+
+We use Precision, Recall, F1 as evaluation measures. These measures are calculated
+using the perl script `conlleval`.
+
+**Note**: we modified some annotation mistakes in the training and test data
+(e.g., missing B- tags), so the following results may be different from
+the reported results in the paper [1](https://arxiv.org/abs/1803.04375).
+
+| Setting                      | Precision | Recall | F1   |
+|--------------------------------|-----------|--------|------|
+|Original POS and chunking tags  | 93.68     | 94.03  | 93.85 |
+|Without chunking tags | 90.13 | 90.49 | 90.31 |
+|Without POS, chunking tags | 89.93 | 90.29 | 90.11 |
+
+
+## Experimental results on VLSP 2018 data set
+
+*to be added*
+
+## Citation
+
+If you use **vietner** in your papers, please cite following papers.
+
+
+```
+@article{minh2018a,
+  title={A Feature-Rich Vietnamese Named-Entity Recognition Model},
+  author={Minh, Pham Quang Nhat},
+  journal={Proceedings of CICLING 2018},
+  year={2018}
+}
+```
+
+```
+@article{minh2018b,
+  title={A Feature-Based Model for Nested Named-Entity Recognition at VLSP-2018 NER Evaluation Campaign},
+  author={Minh, Pham Quang Nhat},
+  journal={Proceedings of the fifth international workshop on Vietnamese Language and Speech Processing (VLSP 2018)},
+  year={2018}
+}
+```
+
+

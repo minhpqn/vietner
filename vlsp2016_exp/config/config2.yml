@@ -1,0 +1,26 @@
+crfpath: crfsuite
+crf_options: -a l2sgd -p c2=3.2 -p feature.possible_transitions=1 -p feature.possible_states=1
+
+word_embeddings:
+  default: glove
+  word2vec:
+    path: ../resources/word_vectors/vn25min20.txt
+    binary: False
+  glove:
+    path: ../resources/glove.vie.25d.txt
+    binary: False
+  scale: 1.0
+
+brown_cluster:
+  # VLSP-2016 config
+  path: ../resources/baomoi-c1000/paths
+  prefix_lengths: [4, 6, 8, 10]
+
+use_word_embedding: True
+use_brown_clusters: True
+# Use Token Regex features
+use_fregex: True
+# Field in the data
+fields: w pos chk y
+# Fields in feature extraction
+feature_fields: w pos

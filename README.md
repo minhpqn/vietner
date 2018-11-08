@@ -59,7 +59,7 @@ using the perl script `conlleval`.
 
 **Note**: we modified some annotation mistakes in the training and test data
 (e.g., missing B- tags), so the following results may be different from
-the reported results in the paper [1](https://arxiv.org/abs/1803.04375).
+the reported results in the paper [\[1\]](https://arxiv.org/abs/1803.04375).
 
 | Setting                      | Precision | Recall | F1   |
 |--------------------------------|-----------|--------|------|

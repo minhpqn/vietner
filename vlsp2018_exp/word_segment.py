@@ -332,7 +332,7 @@ if __name__ == "__main__":
         files = [f for f in os.listdir(dd) if os.path.isfile(os.path.join(dd, f))]
         for filename in files:
             ff = os.path.join(dd, filename)
-            with open(ff, "r") as f:
+            with open(ff, "r", encoding="utf-8", errors="ignore") as f:
                 for line in f:
                     line = line.strip()
                     line = line.strip(u"\ufeff")

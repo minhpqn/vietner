@@ -5,7 +5,7 @@ dataDir="./data/exp1/train"
 
 mkdir -p $dataDir
 
-python word_segment.py $trainDir $dataDir/train_syllables.txt $dataDir/train_ws.txt &> $dataDir/log-train.txt
+python word_segment.py $trainDir $dataDir/train_syllables.txt $dataDir/train_ws.txt > $dataDir/log-train.txt
 
 cut -f 1,2 -d " " $dataDir/train_ws.txt > $dataDir/train_ws-l1.txt
 cut -f 1,3 -d " " $dataDir/train_ws.txt > $dataDir/train_ws-l2.txt

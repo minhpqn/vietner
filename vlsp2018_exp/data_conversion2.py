@@ -3,11 +3,8 @@
 import unittest
 import re
 import os
-import sys
 from collections import OrderedDict
-from nltk.tokenize import sent_tokenize, word_tokenize, RegexpTokenizer
 from nltk.tokenize import WordPunctTokenizer
-from nltk.tokenize import TreebankWordTokenizer
 from argparse import ArgumentParser
 
 

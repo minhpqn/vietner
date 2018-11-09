@@ -1,15 +1,12 @@
 """Function for data conversion
 """
-import unittest
 import re
 import os
-import sys
 from collections import OrderedDict
-from nltk.tokenize import sent_tokenize, word_tokenize, RegexpTokenizer
 from nltk.tokenize import WordPunctTokenizer
-from nltk.tokenize import TreebankWordTokenizer
 from argparse import ArgumentParser
-from pyvi.pyvi import ViTokenizer, ViPosTagger
+# from pyvi.pyvi import ViTokenizer, ViPosTagger
+
 
 def split_punctuations(words):
     """Split punctuations before and after a words
@@ -28,28 +25,28 @@ def split_punctuations(words):
     return tokens
 
 
-def vi_tokenize(text):
-    text = ViTokenizer.tokenize(text)
-    tlist = text.split()
-
-    i = 0
-    alist = []
-    while i < len(tlist) - 1:
-        if tlist[i + 1].startswith('@') and text.find(tlist[i] + tlist[i + 1]) != -1:
-            alist.append(tlist[i] + tlist[i + 1])
-            i = i + 2
-        else:
-            alist.append(tlist[i])
-            i = i + 1
-    if i == len(tlist) - 1:
-        alist.append(tlist[i])
-
-    return split_punctuations(alist)
-
-
-def vi_pos_tagging(tokens):
-    a = ViPosTagger.postagging(" ".join(tokens))
-    return a[1]
+# def vi_tokenize(text):
+#     text = ViTokenizer.tokenize(text)
+#     tlist = text.split()
+#
+#     i = 0
+#     alist = []
+#     while i < len(tlist) - 1:
+#         if tlist[i + 1].startswith('@') and text.find(tlist[i] + tlist[i + 1]) != -1:
+#             alist.append(tlist[i] + tlist[i + 1])
+#             i = i + 2
+#         else:
+#             alist.append(tlist[i])
+#             i = i + 1
+#     if i == len(tlist) - 1:
+#         alist.append(tlist[i])
+#
+#     return split_punctuations(alist)
+#
+#
+# def vi_pos_tagging(tokens):
+#     a = ViPosTagger.postagging(" ".join(tokens))
+#     return a[1]
 
 
 class Syllable(object):

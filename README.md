@@ -97,7 +97,7 @@ described in the paper [\[2\]](https://arxiv.org/abs/1803.08463).
 | **Separated** | 78.35 | 70.44 | 74.19 |
 | **Hybrid** | 78.32 | 70.88 | 74.41 |
 
-Currently, our **Joint** system obtain SOTA F1 score on VLSP 2018 data set (including nested named entity recognition).
+Currently, our **Joint** system obtains SOTA F1 score on VLSP 2018 data set (including nested named entity recognition).
 
 **Note**: the paper Dong and Nguyen, 2018. [Attentive Neural Network for Named Entity Recognition in Vietnamese](https://arxiv.org/abs/1810.13097)
 only reported the F1 score for one level of entities not including nested named entities. They did not handle nested named entities.

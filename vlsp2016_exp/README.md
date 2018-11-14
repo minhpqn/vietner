@@ -35,7 +35,7 @@ python main.py -tab ./config/config1.yml tmp/ ./data/train_sample-tab.txt ./data
 ## Citation
 
 Please cite the following paper when you compare your NER model with
-**vietner** on the VLSP 2016 data set in our paper.
+**vietner** on the VLSP 2016 data set in your paper.
 
 ```
 @article{minh2018a,

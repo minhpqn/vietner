@@ -124,7 +124,7 @@ In VLSP 2018 evaluation campaign, we use this method to generate our official su
 ## Citation
 
 Please cite the following papers when you compare your NER model with
-**vietner** on the VLSP 2018 data set in our paper.
+**vietner** on the VLSP 2018 data set in your paper.
 
 
 ```

@@ -75,7 +75,7 @@ See the [README.md](./vlsp2018_exp/README.md) within the directory [vlsp2018_exp
 for more details.
 
 We report experimental results of three systems as follows. The evaluation measures
-were calculated by using the official evaluation program `evaluation.jar` that was
+were calculated by using the official evaluation program [`evaluation.jar`](./vlsp2018_exp/evaluation.jar) that was
 provided by VLSP 2018 organizers. The program calculated Precision, Recall, F1 scores
 for all named entities including nested entities. We only reported overall evaluation without taking *Domains* into account.
 

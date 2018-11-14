@@ -80,12 +80,12 @@ We used the official evaluation program which was provided by VLSP 2018 organize
 The program calculated Precision, Recall, F1 scores for all named entities including nested entities.
 We only reported overall evaluation without taking *Domains* into account.
 
-Use the program `evaluation.jar` for evaluation.
+Use the program `evaluation.jar` in this current directory for evaluation.
 
 E.g., Evaluate for **Joint** system.
 
 ```
-java -jar evaluation.jar ./data/VLSP2018-NER-Test-Domains/ ./data/exp1/test/joint/
+java -jar evaluation.jar ./data/VLSP2018-NER-Test-Domains/ ./data/exp1/output/test/joint/
 ```
 
 **Evaluation results for the experiment 1 on the dev set**
@@ -112,6 +112,10 @@ consistently obtained better Recall than those of **Separated** and **Hybrid**.
 We combine provided training and development data to make
 a new training data to train the model and use that model to evaluate on the test set.
 In VLSP 2018 evaluation campaign, we use this method to generate our official submissions.
+
+Steps are similar as the experiment 1 except that we combine provided training and development
+set to make a larger training data for training CRF models. Refer to the script [`run.sh`](./run.sh)
+for details.
 
 **Evaluation results of the official submissions (See the paper [\[2\]](https://arxiv.org/abs/1803.08463))**
 

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Please change the path to the VLSP 2016 data
-# We omit nested entity so the data file should have 5 columns in each line
+# We omit nested entity so the data file should have 4 columns in each line
 # w pos chunk tag
 
 train_data="./data/original/train.4column.txt"

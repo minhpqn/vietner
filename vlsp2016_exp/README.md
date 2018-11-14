@@ -32,6 +32,28 @@ When we run on the sample data where tab character is used as the separator.
 python main.py -tab ./config/config1.yml tmp/ ./data/train_sample-tab.txt ./data/test_sample-tab.txt
 ```
 
+## Experimental Results on VLSP 2016 data set
+
+Following table shows the experimental results with three settings:
+
+- Using *Original POS and chunking tags* provided in the data. In this setting,
+we use all features derived from words, POS tags, chunking tags
+- *Without chunking tags*: we use features derived from words and POS tags
+- *Without POS, chunking tags*: we use only features derived from words
+
+We use Precision, Recall, F1 as evaluation measures. These measures are calculated
+using the perl script `conlleval`.
+
+**Note**: we modified some annotation mistakes in the training and test data
+(e.g., missing B- tags), so the following results may be different from
+the reported results in the paper [\[1\]](https://arxiv.org/abs/1803.04375).
+
+| Setting                      | Precision | Recall | F1   |
+|--------------------------------|-----------|--------|------|
+|Original POS and chunking tags  | 93.68     | 94.03  | 93.85 |
+|Without chunking tags | 90.13 | 90.49 | 90.31 |
+|Without POS, chunking tags | 89.93 | 90.29 | 90.11 |
+
 ## Citation
 
 Please cite the following paper when you compare your NER model with

@@ -26,9 +26,23 @@ When we run on the sample data where space character is used as the separator.
 python main.py ./config/config1.yml tmp/ ./data/train_sample-space.txt ./data/test_sample-space.txt
 ```
 
-IWhen we run on the sample data where tab character is used as the separator.
+When we run on the sample data where tab character is used as the separator.
 
 ```
 python main.py -tab ./config/config1.yml tmp/ ./data/train_sample-tab.txt ./data/test_sample-tab.txt
+```
+
+## Citation
+
+Please cite the following paper when you compare your NER model with
+**vietner** on the VLSP 2016 data set in our paper.
+
+```
+@article{minh2018a,
+  title={A Feature-Rich Vietnamese Named-Entity Recognition Model},
+  author={Minh, Pham Quang Nhat},
+  journal={Proceedings of CICLING 2018},
+  year={2018}
+}
 ```
 

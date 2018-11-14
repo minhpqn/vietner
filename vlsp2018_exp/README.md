@@ -121,3 +121,27 @@ In VLSP 2018 evaluation campaign, we use this method to generate our official su
 | **Separated** | 78.35 | 70.44 | 74.19 |
 | **Hybrid** | 78.32 | 70.88 | 74.41 |
 
+## Citation
+
+Please cite the following papers when you compare your NER model with
+**vietner** on the VLSP 2018 data set in our paper.
+
+
+```
+@article{minh2018a,
+  title={A Feature-Rich Vietnamese Named-Entity Recognition Model},
+  author={Minh, Pham Quang Nhat},
+  journal={Proceedings of CICLING 2018},
+  year={2018}
+}
+```
+
+```
+@article{minh2018b,
+  title={A Feature-Based Model for Nested Named-Entity Recognition at VLSP-2018 NER Evaluation Campaign},
+  author={Minh, Pham Quang Nhat},
+  journal={Proceedings of the fifth international workshop on Vietnamese Language and Speech Processing (VLSP 2018)},
+  year={2018}
+}
+```
+

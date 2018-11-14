@@ -90,7 +90,7 @@ java -jar evaluation.jar ./data/VLSP2018-NER-Test-Domains/ ./data/exp1/test/join
 
 **Evaluation results for the experiment 1 on the dev set**
 
-| System | Precision | Recall | F1    |
+|System | Precision | Recall | F1    |
 |--------|-----------|--------|-------|
 | **Joint** | 86.17 | 81.84 | 83.95 |
 | **Separated** | 87.01 | 81.08 | 83.94 |
@@ -98,7 +98,7 @@ java -jar evaluation.jar ./data/VLSP2018-NER-Test-Domains/ ./data/exp1/test/join
 
 **Evaluation results for the experiment 1 on the test set**
 
-| System | Precision | Recall | F1    |
+|System | Precision | Recall | F1    |
 |--------|-----------|--------|-------|
 | **Joint** | 76.98 | 71.1 | **73.92** |
 | **Separated** | 76.83 | 69.12 | 72.77 |
@@ -115,7 +115,7 @@ In VLSP 2018 evaluation campaign, we use this method to generate our official su
 
 **Evaluation results of the official submissions (See the paper [\[2\]](https://arxiv.org/abs/1803.08463))**
 
-| System | Precision | Recall | F1    |
+|System | Precision | Recall | F1    |
 |--------|-----------|--------|-------|
 | **Joint** | 77.99 | 71.1 | **74.70** |
 | **Separated** | 78.35 | 70.44 | 74.19 |

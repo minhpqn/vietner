@@ -91,7 +91,7 @@ described in the paper [\[2\]](https://arxiv.org/abs/1803.08463).
 
 **Evaluation results of the official submissions (See the paper [\[2\]](https://arxiv.org/abs/1803.08463))**
 
-| System | Precision | Recall | F1    |
+|System | Precision | Recall | F1    |
 |--------|-----------|--------|-------|
 | **Joint** | 77.99 | 71.1 | **74.70** |
 | **Separated** | 78.35 | 70.44 | 74.19 |

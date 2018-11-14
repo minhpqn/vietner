@@ -21,6 +21,7 @@ can be found in the following papers.
 - Perl (version 5)
 - yaml
 - pandas
+- nltk
 - [crfsuite 0.12](http://www.chokkan.org/software/crfsuite/)
 
 ## Resources
@@ -70,7 +71,36 @@ the reported results in the paper [\[1\]](https://arxiv.org/abs/1803.04375).
 
 ## Experimental results on VLSP 2018 data set
 
-*to be added*
+See the [README.md](./vlsp2018_exp/README.md) within the directory [vlsp2018_exp](./vlsp2018_exp)
+for more details.
+
+We report experimental results of three systems as follows. The evaluation measures
+were calculated by using the official evaluation program `evaluation.jar` that was
+provided by VLSP 2018 organizers. The program calculated Precision, Recall, F1 scores
+for all named entities including nested entities. We only reported overall evaluation without taking *Domains* into account.
+
+- **Joint**: We use joint model to recognize joint tags for each token of
+a sequence, then split joint tags into level-1 and level-2 tags. This is the method used in
+the run 4 described in the paper [\[2\]](https://arxiv.org/abs/1803.08463).
+- **Hybrid**: We use the joint model for recognizing level-2 entities
+and level-1 model for recognizing level-1 entities. This is the method used in the run 2
+described in the paper [\[2\]](https://arxiv.org/abs/1803.08463).
+- **Separated**: Using level-1 and level-2 model for recognizing level-1
+and level-2 entities, respectively. This is the method used in the run 6
+described in the paper [\[2\]](https://arxiv.org/abs/1803.08463).
+
+**Evaluation results of the official submissions (See the paper [\[2\]](https://arxiv.org/abs/1803.08463))**
+
+| System | Precision | Recall | F1    |
+|--------|-----------|--------|-------|
+| **Joint** | 77.99 | 71.1 | **74.70** |
+| **Separated** | 78.35 | 70.44 | 74.19 |
+| **Hybrid** | 78.32 | 70.88 | 74.41 |
+
+Currently, our **Joint** system obtain SOTA F1 score on VLSP 2018 data set (including nested named entity recognition).
+
+**Note**: the paper Dong and Nguyen, 2018. [Attentive Neural Network for Named Entity Recognition in Vietnamese](https://arxiv.org/abs/1810.13097)
+only reported the F1 score for one level of entities not including nested named entities. They did not handle nested named entities.
 
 ## Citation
 

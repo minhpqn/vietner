@@ -12,7 +12,7 @@ Details of the model and features used in the model
 can be found in the following papers.
 
 1. Pham Quang Nhat Minh (2018). [A Feature-Rich Vietnamese Named-Entity Recognition Model](https://arxiv.org/abs/1803.04375). arXiv preprint arXiv:1803.04375.
-2. Pham Quang Nhat Minh (2018). [A Feature-Based Model for Nested Named-Entity Recognition at VLSP-2018 NER Evaluation Campaign](https://arxiv.org/abs/1803.08463). arXiv preprint arXiv:1803.08463.
+2. Pham, M. Q. N. (2018). A Feature-Based Model for Nested Named-Entity Recognition at VLSP-2018 NER Evaluation Campaign. Journal of Computer Science and Cybernetics, 34(4), 311-321. Link: [http://www.vjs.ac.vn/index.php/jcc/article/view/13163](http://www.vjs.ac.vn/index.php/jcc/article/view/13163)
 
 ## Requirements
 

@@ -141,11 +141,17 @@ Please cite the following papers when you compare your NER model with
 ```
 
 ```
-@article{minh2018b,
-  title={A Feature-Based Model for Nested Named-Entity Recognition at VLSP-2018 NER Evaluation Campaign},
-  author={Minh, Pham Quang Nhat},
-  journal={Proceedings of the fifth international workshop on Vietnamese Language and Speech Processing (VLSP 2018)},
-  year={2018}
+@article{JCC13163,
+  author = {Minh Pham},
+  title = {A Feature-Based Model for Nested Named-Entity Recognition at VLSP-2018 NER Evaluation Campaign},
+  journal = {Journal of Computer Science and Cybernetics},
+  volume = {34},
+  number = {4},
+  year = {2019},
+  keywords = {Nested named-entity recognition, CRF, VLSP},
+  abstract = {In this report, we describe our participant named-entity recognition system at VLSP 2018 evaluation campaign. We formalized the task as a sequence labeling problem using BIO encoding scheme. We applied a feature-based model which combines word, word-shape features, Brown-cluster-based features, and word-embedding-based features. We compare several methods to deal with nested entities in the dataset. We showed that combining tags of entities at all levels for training a sequence labeling model (joint-tag model) improved the accuracy of nested named-entity recognition.},
+  issn = {1813-9663}, pages = {311--321}, doi = {10.15625/1813-9663/34/4/13163},
+  url = {http://www.vjs.ac.vn/index.php/jcc/article/view/13163}
 }
 ```
 
